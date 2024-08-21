@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Renda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sessao-input">
+            <h1>Tenha controle sobre sua renda</h1>
+            <div class="img">
+                <img src="img/Negócios1.jpeg" alt="">
+            </div>
+            <div class="inpt">
+                <input type="text" id="descricao" placeholder="Produto">
+                <input type="number" id="valor" placeholder="Valor">
+            </div>
+            <div class="btn">
+                <button id="adicionar-receita">Adicionar Receita</button>
+                <button id="adicionar-despesa">Adicionar Despesa</button>
+            </div>
+        </div>
+        <div class="sessao-resultado">
+            <div class="info">
+                <p>Receitas: R$ <span id="total-receitas"></span></p>
+                <select id="lista-receitas" multiple></select>
+                <p>Despesas: R$ <span id="total-despesas"></span></p>
+                <select id="lista-despesas" multiple></select>
+                <p>Saldo Final: R$ <span id="saldo-final"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
